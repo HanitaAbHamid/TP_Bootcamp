@@ -1,0 +1,8 @@
+Git Bash Tip: Use mkdir -p parent_folder/{folder1,folder2,folder3}
+Git Bash Tip2: To remove folder or file type rm -rf thefolder or filename
+Git Bash Tip3: To rename folder or filename type mv folder/filename newfoldername/newfilename
+Git Bash Tip 3: To create notepad type echo "Just type whatever" > cheatsheet.txt
+Git Bash Tip 4: To see whats in the file type cat filename.txt
+Git Bash Tip 5: To add second line you can again use echo "2ndline typed and followed by 2 arrows" >> filename.txt
+*If you want to remove and retype all from fresh just use echo"Redo and just one arrow" > filename.txt
+Git Bash Tip 6: If you want to write more lines than type nano filename
