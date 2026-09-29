@@ -1,0 +1,5 @@
+Infrastructure Component: AWS Gateway
+Status: Staged for deployment
+
+[DEPLOYMENT DETECTED] App: Hani_Web_App | Status: SUCCESSFUL
+[DEPLOYMENT DETECTED] App: Hani_Web_App | Status: SUCCESSFUL

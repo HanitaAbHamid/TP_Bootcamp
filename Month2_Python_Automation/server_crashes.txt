@@ -1,0 +1,4 @@
+INFO - Server started
+ERROR_CRITICAL - Database connection failed
+INFO - Retrying connection
+ERROR_CRITICAL - Authentication token expired
