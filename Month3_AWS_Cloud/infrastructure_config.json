@@ -1,0 +1,6 @@
+[
+    {"instance_id": "i-web-prod-01", "status": "running", "environment": "Production"},
+    {"instance_id": "i-db-prod-02", "status": "stopped", "environment": "Production"},
+    {"instance_id": "i-test-dev-01", "status": "terminated", "environment": "Development"},
+    {"instance_id": "i-api-stage-03", "status": "stopped", "environment": "Staging"}
+]
