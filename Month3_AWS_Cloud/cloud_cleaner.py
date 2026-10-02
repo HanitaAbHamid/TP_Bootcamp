@@ -9,9 +9,10 @@ for instance in aws_instances:
     current_status = instance["status"]
     env_tier = instance["environment"]
 
-    if current_status != "running":
-        print(f"Action Required [{env_tier}]:Target {server_id} is {current_status.upper()}.")
-    else:
-        print(f"No Action Required [{env_tier}]: Target {server_id} is {current_status.upper()}.")
-
-print("\n[PLAYBOOK COMPLETE] Dynamic resource audit completed successfully.")
+    if current_status == "running":
+        print(f"Healthy [{env_tier}]: Target {server_id} is {current_status.upper()}.")
+    elif current_status == "stopped":
+        print(f"Warning [{env_tier}]: Target {server_id} is {current_status.upper()}. Needs to be restarted")
+    elif current_status == "terminated":
+       print(f"Action Required [{env_tier}]: Target {server_id} is {current_status.upper()}. Triggering AWS cleanup")
+print("\n[PLAYBOOK COMPLETE] Dynamic resource audit completed successfully")
