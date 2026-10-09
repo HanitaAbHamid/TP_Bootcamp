@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cloud-cleaner-deployment
+  labels:
+    app: cloud-cleaner
+spec:
+  # 🟢 Tells K8s to ALWAYS keep exactly 3 copies of our container running!
+  replicas: 3
+  selector:
+    matchLabels:
+      app: cloud-cleaner
+  template:
+    metadata:
+      labels:
+        app: cloud-cleaner
+    spec:
+      containers:
+      - name: clean-worker
+        # 🟢 Points to the exact Docker image package you built earlier!
+        image: my-cloud-cleaner:latest
+        imagePullPolicy: Never
